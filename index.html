@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<!-- saved from url=(0031)https://a1.micargo.in/dashboard -->
-<html lang="en" data-layout="horizontal" data-layout-position="fixed" data-topbar="dark" data-sidebar="dark" data-sidebar-size="sm-hover" data-sidebar-image="none" data-theme="default" data-theme-colors="default" data-preloder="disable" data-sidebar-visibility="show" data-layout-style="default" data-bs-theme="light" data-layout-width="fluid" data-preloader="disable" data-body-image="none"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en" data-layout="horizontal" data-layout-position="fixed" data-topbar="dark" data-sidebar="dark" data-sidebar-size="sm-hover" data-sidebar-image="none" data-theme="default" data-theme-colors="default" data-preloder="disable" data-bs-theme="light" data-layout-width="fluid" data-layout-style="default" data-body-image="none" data-sidebar-visibility="show" data-preloader="disable"><head>
+    <meta charset="utf-8">
 <meta name="author" content="Million i Technology Private Limited">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <title>Dashboard Overview » Mi Cargo</title>
 
+    <meta charset="UTF-8" content="CfDJ8FQNIuYlOhxFraTF8cBEG60fynkDGYqH5D5cYESg814fI-twZfkBV9-cMFR5IwuCJUcWZrrLJByWW2XdMy6fWpbDdjPbbfK-mSsv-ef-rSXmwcOBliriqWK7XFzjbrVvfN8-qa7B9qE6AYRwBpfOjfXkg6koMwgP7zUQcqcCEF_WnY6wRoti-BUgis8DZ23ZOA" name="csrftoken">
     
-    
-    <link href="./Dashboard Overview » Mi Cargo_files/sweetalert2.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/vendor/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css">
 
 
-    <script src="./Dashboard Overview » Mi Cargo_files/micargo-layout.js.download"></script>
-<link href="./Dashboard Overview » Mi Cargo_files/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="./Dashboard Overview » Mi Cargo_files/icons.min.css" rel="stylesheet" type="text/css">
-<link href="./Dashboard Overview » Mi Cargo_files/micargo-theme.min.css" rel="stylesheet" type="text/css">
-<link href="./Dashboard Overview » Mi Cargo_files/sweetalert2.min.css" rel="stylesheet" type="text/css">
-<link href="./Dashboard Overview » Mi Cargo_files/custom.css" rel="stylesheet" type="text/css">
+    <script src="/assets/js/micargo-layout.js"></script>
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/micargo-theme.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/vendor/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/custom.css?v=dsJoFJKuBpwkfLcTVl2AUXkL_JTulZ5ZaQyIOmgR3M4" rel="stylesheet" type="text/css">
     
 </head>
 <body>
@@ -29,27 +27,27 @@
             <div class="d-flex">
                 <!-- LOGO -->
                 <div class="navbar-brand-box horizontal-logo">
-                    <a class="logo logo-dark" href="https://a1.micargo.in/dashboard">
+                    <a class="logo logo-dark" href="/dashboard">
     <span class="logo-sm">
-        <img src="./Dashboard Overview » Mi Cargo_files/logo-client-sm-dark.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
+        <img src="/assets/images/logo-client-sm-dark.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
     </span>
     <span class="logo-lg">
-        <img src="./Dashboard Overview » Mi Cargo_files/logo-client-dark.png" alt="" class="client-logo-lg img-fluid" style="width: auto;">
+        <img src="/assets/images/logo-client-dark.png" alt="" class="client-logo-lg img-fluid" style="width: auto;">
     </span>
 </a>
 
-<a class="logo logo-light" href="https://a1.micargo.in/dashboard">
+<a class="logo logo-light" href="/dashboard">
     <span class="logo-sm">
-        <img src="./Dashboard Overview » Mi Cargo_files/logo-client-sm-light.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
+        <img src="/assets/images/logo-client-sm-light.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
     </span>
     <span class="logo-lg">
-        <img src="./Dashboard Overview » Mi Cargo_files/logo-client-light.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
+        <img src="/assets/images/logo-client-light.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
     </span>
 </a>
                 </div>
 
                 <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger material-shadow-none" id="topnav-hamburger-icon">
-                    <span class="hamburger-icon">
+                    <span class="hamburger-icon open">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -58,17 +56,85 @@
                 <div class="d-flex gap-3">
                     <div class="app-search d-none d-md-block">
                         <div class="position-relative">
-                            <input type="text" class="form-control topbar-shipment-search" autocomplete="off" value="" inputmode="text" placeholder="Search Parcels...">
-<button type="button" class="btn btn-icon position-absolute end-0 top-50 translate-middle-y me-2" id="openQrScanner" title="Scan QR Code" style="border: none; background: transparent;">
-                                <i class="ri-qr-code-line fs-20 text-muted"></i>
-                            </button>
+                            <!-- Search Bar with QR Scanner Button -->
+<div class="app-search d-none d-md-block">
+    <div class="position-relative">
+        <input type="text" class="form-control topbar-shipment-search" placeholder="Search Parcels...">
+        <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle position-absolute end-0 top-0 translate-middle-y me-1 mt-2" id="openQrScanner" title="Scan QR Code">
+            <i class="ri-qr-code-line fs-16"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Container where the camera video feed will render -->
+<div id="reader" style="width: 100%; max-width: 400px; margin-top: 10px;"></div>
+
+<!-- Include HTML5 QR Code Scanner CDN Script -->
+<script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+<!-- Scanner Initialization Script -->
+<script>
+let html5QrCode; // Global variable to track scanner state
+
+document.getElementById('openQrScanner').addEventListener('click', function () {
+    const readerDiv = document.getElementById('reader');
+    if (!readerDiv) {
+        alert("Error: #reader container missing from HTML.");
+        return;
+    }
+
+    // Check if the library loaded successfully
+    if (typeof Html5Qrcode === 'undefined') {
+        alert("QR Scanner library failed to load. Check your internet connection or CDN availability.");
+        return;
+    }
+
+    // Initialize scanner instance if not already created
+    if (!html5QrCode) {
+        html5QrCode = new Html5Qrcode("reader");
+    }
+
+    // If scanner is already running, stop it first to prevent overlapping streams
+    const startScanner = () => {
+        html5QrCode.start(
+            { facingMode: "environment" }, 
+            {
+                fps: 10,
+                qrbox: { width: 250, height: 250 }
+            },
+            (decodedText, decodedResult) => {
+                // Success: Fill search input
+                document.querySelector('.topbar-shipment-search').value = decodedText;
+                
+                // Stop scanner
+                html5QrCode.stop().then(() => {
+                    readerDiv.innerHTML = ""; // Clear video feed element
+                }).catch(err => console.error("Failed to stop scanner", err));
+            },
+            (errorMessage) => {
+                // Ignore frame-by-frame scanning noise
+            }
+        ).catch(err => {
+            console.error("Unable to start scanning.", err);
+            alert("Could not open camera. Please check:\n1. Are you using HTTPS or localhost?\n2. Did you allow camera permissions in your browser?");
+        });
+    };
+
+    // Safe check if it's currently running before starting
+    if (html5QrCode.isScanning) {
+        html5QrCode.stop().then(startScanner).catch(err => console.log(err));
+    } else {
+        startScanner();
+    }
+});
+</script>
                             <span class="mdi mdi-magnify search-widget-icon"></span>                        
                         </div>  
                     
                     
                     </div>
                 
-                    <a id="redirectToCreate" class="btn btn-success add-btn book-parcel-link my-3" style="margin-right: 36px;" href="https://a1.micargo.in/shipment/booking"><i class="ri-add-line align-bottom me-1 "></i>Book Parcel</a>
+                    <a id="redirectToCreate" class="btn btn-success add-btn book-parcel-link my-3" style="margin-right: 36px;" href="/shipment/booking"><i class="ri-add-line align-bottom me-1 "></i>Book Parcel</a>
                 </div>
                 
                 
@@ -93,7 +159,7 @@
 
                 <div class="dropdown ms-1 topbar-head-dropdown header-item">
                         
-<form method="post" autocomplete="off" action="https://a1.micargo.in/branchselector?redirect=%2Fdashboard">
+<form method="post" autocomplete="off" action="/branchselector?redirect=%2Fdashboard">
     <div class="dropdown">
             <button class="btn  text-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="ri-map-pin-user-fill"></i>
@@ -103,7 +169,7 @@
 
             
     </div>        
-<input name="__RequestVerificationToken" type="hidden" value="CfDJ8FQNIuYlOhxFraTF8cBEG63Pkypr4UJ4ylI06j546KB-XCHgsD28Wu5BFnHzvV-HdtMwQ-fjWkF9DVn1PDQqih3WXsLQi6RL-LxQr3tMq7nqjt7s24-vi-AkSaFQkOfKruQHCWkFkx9TeyXjdjRuqz1Vhf6_6tPGb7DgGzAU4W7SEdeYseLLuelpGUSNrKq6Dw"></form>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8FQNIuYlOhxFraTF8cBEG60fynkDGYqH5D5cYESg814fI-twZfkBV9-cMFR5IwuCJUcWZrrLJByWW2XdMy6fWpbDdjPbbfK-mSsv-ef-rSXmwcOBliriqWK7XFzjbrVvfN8-qa7B9qE6AYRwBpfOjfXkg6koMwgP7zUQcqcCEF_WnY6wRoti-BUgis8DZ23ZOA"></form>
 
                 </div>
 
@@ -128,12 +194,12 @@
         </button>
         <div class="dropdown-menu dropdown-menu-end">
             <!-- item-->
-            <a class="dropdown-item" href="https://a1.micargo.in/account/settings/profile"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
-            <a class="dropdown-item" href="https://a1.micargo.in/account/settings/security"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
+            <a class="dropdown-item" href="/account/settings/profile"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+            <a class="dropdown-item" href="/account/settings/security"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
             <div class="dropdown-divider"></div>
-            <form class="form-inline" id="logoutForm" method="post" action="https://a1.micargo.in/account/logout">
+            <form class="form-inline" id="logoutForm" method="post" action="/account/logout">
                 <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit();"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
-            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8FQNIuYlOhxFraTF8cBEG63Pkypr4UJ4ylI06j546KB-XCHgsD28Wu5BFnHzvV-HdtMwQ-fjWkF9DVn1PDQqih3WXsLQi6RL-LxQr3tMq7nqjt7s24-vi-AkSaFQkOfKruQHCWkFkx9TeyXjdjRuqz1Vhf6_6tPGb7DgGzAU4W7SEdeYseLLuelpGUSNrKq6Dw"></form>
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8FQNIuYlOhxFraTF8cBEG60fynkDGYqH5D5cYESg814fI-twZfkBV9-cMFR5IwuCJUcWZrrLJByWW2XdMy6fWpbDdjPbbfK-mSsv-ef-rSXmwcOBliriqWK7XFzjbrVvfN8-qa7B9qE6AYRwBpfOjfXkg6koMwgP7zUQcqcCEF_WnY6wRoti-BUgis8DZ23ZOA"></form>
 
             
         </div>
@@ -154,7 +220,7 @@
             </div>
             <div class="modal-body">
                 <div class="mt-2 text-center">
-                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"><template shadowrootmode="open"><div class="body" style="--lord-icon-primary-base: #f7b84b; --lord-icon-secondary-base: #f06548;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" width="500" height="500" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clippath id="__lottie_element_2"><rect width="500" height="500" x="0" y="0"></rect></clippath><clippath id="__lottie_element_5"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><clippath id="__lottie_element_9"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><clippath id="__lottie_element_13"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><clippath id="__lottie_element_17"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><clippath id="__lottie_element_23"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><g id="__lottie_element_26"><g transform="matrix(4.499904632568359,0.029321324080228806,-0.029321324080228806,4.499904632568359,271.2602233886719,270.7411193847656)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(255,0,0)" fill-opacity="1" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g></g></g><filter id="__lottie_element_36" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><fecomponenttransfer in="SourceGraphic"><fefunca type="table" tableValues="1.0 0.0"></fefunca></fecomponenttransfer></filter><mask id="__lottie_element_26_2" mask-type="alpha"><g filter="url(#__lottie_element_36)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use href="#__lottie_element_26"></use></g></mask><g id="__lottie_element_49"><g clip-path="url(#__lottie_element_50)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: none;"><g transform="matrix(1,0,0,1,235,122.26449584960938)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,74.17710876464844)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><clippath id="__lottie_element_50"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><filter id="__lottie_element_59" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><fecomponenttransfer in="SourceGraphic"><fefunca type="table" tableValues="1.0 0.0"></fefunca></fecomponenttransfer></filter><mask id="__lottie_element_49_2" mask-type="alpha"><g filter="url(#__lottie_element_59)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use href="#__lottie_element_49"></use></g></mask><clippath id="__lottie_element_67"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><g id="__lottie_element_70"><g transform="matrix(4.5,0,0,4.5,270.2480163574219,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(255,0,0)" fill-opacity="1" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g></g></g><filter id="__lottie_element_76" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><fecomponenttransfer in="SourceGraphic"><fefunca type="table" tableValues="1.0 0.0"></fefunca></fecomponenttransfer></filter><mask id="__lottie_element_70_2" mask-type="alpha"><g filter="url(#__lottie_element_76)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use href="#__lottie_element_70"></use></g></mask><clippath id="__lottie_element_78"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><g id="__lottie_element_81"><g clip-path="url(#__lottie_element_82)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path></g></g><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,262)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><clippath id="__lottie_element_82"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><g id="__lottie_element_88"><g clip-path="url(#__lottie_element_89)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,262)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><clippath id="__lottie_element_89"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><filter id="__lottie_element_98" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><fecomponenttransfer in="SourceGraphic"><fefunca type="table" tableValues="1.0 0.0"></fefunca></fecomponenttransfer></filter><mask id="__lottie_element_88_2" mask-type="alpha"><g filter="url(#__lottie_element_98)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use href="#__lottie_element_88"></use></g></mask><filter id="__lottie_element_99" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><fecomponenttransfer in="SourceGraphic"><fefunca type="table" tableValues="1.0 0.0"></fefunca></fecomponenttransfer></filter><mask id="__lottie_element_81_2" mask-type="alpha"><g filter="url(#__lottie_element_99)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use href="#__lottie_element_81"></use></g></mask><g id="__lottie_element_118"><g transform="matrix(4.5,0,0,4.5,270.2480163574219,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(255,0,0)" fill-opacity="1" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g></g></g><clippath id="__lottie_element_137"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><filter id="__lottie_element_140" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><fecomponenttransfer in="SourceGraphic"><fefunca type="table" tableValues="1.0 0.0"></fefunca></fecomponenttransfer></filter><mask id="__lottie_element_118_2" mask-type="alpha"><g filter="url(#__lottie_element_140)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use href="#__lottie_element_118"></use></g></mask><g id="__lottie_element_153"><g clip-path="url(#__lottie_element_154)" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1"><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,262)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><clippath id="__lottie_element_154"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clippath><filter id="__lottie_element_157" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><fecomponenttransfer in="SourceGraphic"><fefunca type="table" tableValues="1.0 0.0"></fefunca></fecomponenttransfer></filter><mask id="__lottie_element_153_2" mask-type="alpha"><g filter="url(#__lottie_element_157)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use href="#__lottie_element_153"></use></g></mask></defs><g clip-path="url(#__lottie_element_2)"><g clip-path="url(#__lottie_element_5)" transform="matrix(1,0,0,1,0,0)" opacity="0" style="display: block;"><g mask="url(#__lottie_element_26_2)" style="display: block;"><g clip-path="url(#__lottie_element_23)" transform="matrix(1,0,0,1,0,0)" opacity="1"><g transform="matrix(1,0,0,1,235,131.95095825195312)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19,-241 C19,-241 -34,-155 -34,-155 C-34,-155 0,-130 0,-130 C0,-130 54,-144 54,-144 C54,-144 85,-170 85,-170 C85,-170 19,-241 19,-241z"></path></g></g><g transform="matrix(1,0,0,1,235,88)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M69,-208 C69,-208 0,-162 0,-162 C0,-162 50,-97 50,-97 C50,-97 104,-111 104,-111 C104,-111 119,-177 119,-177 C119,-177 69,-208 69,-208z"></path></g></g><g transform="matrix(1,0,0,1,162,127.862548828125)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g><g mask="url(#__lottie_element_49_2)" style="display: none;"><g transform="matrix(1,0,0,1,235,113.92219543457031)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path></g></g></g><g transform="matrix(1,0,0,1,235,122.26449584960938)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,74.17710876464844)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><g transform="matrix(4.499904632568359,0.029321324080228806,-0.029321324080228806,4.499904632568359,271.2602233886719,270.7411193847656)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-30.059999465942383,-32.13999938964844 C-30.062000274658203,-31.042999267578125 -30.062999725341797,-29.559999465942383 -30.06399917602539,-27.937000274658203 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.989999771118164,-29.608999252319336 21.986000061035156,-31.451000213623047 21.98200035095215,-32.58599853515625"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-17.020000457763672,-17.8439998626709 C-17.020000457763672,-17.8439998626709 -17.020000457763672,16.802000045776367 -17.020000457763672,16.802000045776367 M-3.9820001125335693,-17.8439998626709 C-3.9820001125335693,-17.8439998626709 -3.9820001125335693,16.802000045776367 -3.9820001125335693,16.802000045776367 M8.998000144958496,-17.8439998626709 C8.998000144958496,-17.8439998626709 8.998000144958496,16.802000045776367 8.998000144958496,16.802000045776367"></path></g></g><g transform="matrix(4.499904632568359,0.029321324080228806,-0.029321324080228806,4.499904632568359,271.2602233886719,270.7411193847656)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><g opacity="1" transform="matrix(1,0,0,1,-3.9690001010894775,-34.03099822998047)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-9.904000282287598,-1.3910000324249268 C-9.22599983215332,-6.251999855041504 -5.046999931335449,-10 0,-10 C0,-10 0,-10 0,-10 C4.709000110626221,-10 8.661999702453613,-6.73799991607666 9.720999717712402,-2.3529999256134033"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-35.08000183105469,-34.125 C-35.08000183105469,-34.125 26.878999710083008,-33.95500183105469 26.878999710083008,-33.95500183105469"></path></g></g></g></g><g clip-path="url(#__lottie_element_9)" transform="matrix(1,0,0,1,0,0)" opacity="0" style="display: block;"><g mask="url(#__lottie_element_70_2)" style="display: block;"><g clip-path="url(#__lottie_element_67)" transform="matrix(1,0,0,1,0,0)" opacity="1"><g mask="url(#__lottie_element_81_2)" style="display: block;"><g clip-path="url(#__lottie_element_78)" transform="matrix(1,0,0,1,0,0)" opacity="1"><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19,-241 C19,-241 -34,-155 -34,-155 C-34,-155 0,-130 0,-130 C0,-130 54,-144 54,-144 C54,-144 85,-170 85,-170 C85,-170 19,-241 19,-241z"></path></g></g><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M69,-208 C69,-208 0,-162 0,-162 C0,-162 50,-97 50,-97 C50,-97 104,-111 104,-111 C104,-111 119,-177 119,-177 C119,-177 69,-208 69,-208z"></path></g></g><g transform="matrix(1,0,0,1,162,441)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><g mask="url(#__lottie_element_88_2)" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path></g></g></g><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,262)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><g transform="matrix(4.5,0,0,4.5,270.2480163574219,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-17.020000457763672,-17.8439998626709 C-17.020000457763672,-17.8439998626709 -17.020000457763672,16.802000045776367 -17.020000457763672,16.802000045776367 M-3.9820001125335693,-17.8439998626709 C-3.9820001125335693,-17.8439998626709 -3.9820001125335693,16.802000045776367 -3.9820001125335693,16.802000045776367 M8.998000144958496,-17.8439998626709 C8.998000144958496,-17.8439998626709 8.998000144958496,16.802000045776367 8.998000144958496,16.802000045776367"></path></g></g></g><g clip-path="url(#__lottie_element_13)" transform="matrix(1,0,0,1,0,0)" opacity="0" style="display: block;"><g mask="url(#__lottie_element_118_2)" style="display: block;"><g clip-path="url(#__lottie_element_137)" transform="matrix(1,0,0,1,0,0)" opacity="1"><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19,-241 C19,-241 -34,-155 -34,-155 C-34,-155 0,-130 0,-130 C0,-130 54,-144 54,-144 C54,-144 85,-170 85,-170 C85,-170 19,-241 19,-241z"></path></g></g><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M69,-208 C69,-208 0,-162 0,-162 C0,-162 50,-97 50,-97 C50,-97 104,-111 104,-111 C104,-111 119,-177 119,-177 C119,-177 69,-208 69,-208z"></path></g></g><g transform="matrix(1,0,0,1,162,441)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g><g mask="url(#__lottie_element_153_2)" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path></g></g></g><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,262)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><g transform="matrix(4.5,0,0,4.5,270.2480163574219,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-17.020000457763672,-17.8439998626709 C-17.020000457763672,-17.8439998626709 -17.020000457763672,16.802000045776367 -17.020000457763672,16.802000045776367 M-3.9820001125335693,-17.8439998626709 C-3.9820001125335693,-17.8439998626709 -3.9820001125335693,16.802000045776367 -3.9820001125335693,16.802000045776367 M8.998000144958496,-17.8439998626709 C8.998000144958496,-17.8439998626709 8.998000144958496,16.802000045776367 8.998000144958496,16.802000045776367"></path></g></g><g transform="matrix(-1.3905764818191528,-4.279754161834717,4.279754161834717,-1.3905764818191528,77.97710418701172,-138.98873901367188)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><g opacity="1" transform="matrix(1,0,0,1,-3.9690001010894775,-34.03099822998047)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-9.904000282287598,-1.3910000324249268 C-9.22599983215332,-6.251999855041504 -5.046999931335449,-10 0,-10 C0,-10 0,-10 0,-10 C4.709000110626221,-10 8.661999702453613,-6.73799991607666 9.720999717712402,-2.3529999256134033"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-35.08000183105469,-34.125 C-35.08000183105469,-34.125 26.878999710083008,-33.95500183105469 26.878999710083008,-33.95500183105469"></path></g></g></g></g><g clip-path="url(#__lottie_element_17)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(4.5,0,0,4.5,270.2480163574219,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-30.059999465942383,-32.13999938964844 C-30.062000274658203,-31.042999267578125 -30.062999725341797,-29.559999465942383 -30.06399917602539,-27.937000274658203 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.989999771118164,-29.608999252319336 21.986000061035156,-31.451000213623047 21.98200035095215,-32.58599853515625"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-17.020000457763672,-17.8439998626709 C-17.020000457763672,-17.8439998626709 -17.020000457763672,16.802000045776367 -17.020000457763672,16.802000045776367 M-3.9820001125335693,-17.8439998626709 C-3.9820001125335693,-17.8439998626709 -3.9820001125335693,16.802000045776367 -3.9820001125335693,16.802000045776367 M8.998000144958496,-17.8439998626709 C8.998000144958496,-17.8439998626709 8.998000144958496,16.802000045776367 8.998000144958496,16.802000045776367"></path></g><g opacity="1" transform="matrix(0.9999773502349854,-0.0067274002358317375,0.0067274002358317375,0.9999773502349854,0.22640728950500488,-0.03212738037109375)"><g opacity="1" transform="matrix(1,0,0,1,-3.9690001010894775,-34.03099822998047)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-9.904000282287598,-1.3910000324249268 C-9.22599983215332,-6.251999855041504 -5.046999931335449,-10 0,-10 C0,-10 0,-10 0,-10 C4.709000110626221,-10 8.661999702453613,-6.73799991607666 9.720999717712402,-2.3529999256134033"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-35.08000183105469,-34.125 C-35.08000183105469,-34.125 26.878999710083008,-33.95500183105469 26.878999710083008,-33.95500183105469"></path></g></g></g></g><g class="com" style="display: none;"><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g></g></g></svg></div></template></lord-icon>
+                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"><template shadowrootmode="open"><div class="body" style="--lord-icon-primary-base: #f7b84b; --lord-icon-secondary-base: #f06548;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" width="500" height="500" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_2"><rect width="500" height="500" x="0" y="0"></rect></clipPath><clipPath id="__lottie_element_5"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><clipPath id="__lottie_element_9"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><clipPath id="__lottie_element_13"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><clipPath id="__lottie_element_17"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><clipPath id="__lottie_element_23"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><g id="__lottie_element_26"><g transform="matrix(4.5,0,0,4.5,270.24798583984375,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(255,0,0)" fill-opacity="1" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g></g></g><filter id="__lottie_element_36" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_26_2" mask-type="alpha"><g filter="url(#__lottie_element_36)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use xlink:href="#__lottie_element_26"></use></g></mask><g id="__lottie_element_49"><g clip-path="url(#__lottie_element_50)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,262)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><clipPath id="__lottie_element_50"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><filter id="__lottie_element_59" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_49_2" mask-type="alpha"><g filter="url(#__lottie_element_59)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use xlink:href="#__lottie_element_49"></use></g></mask><clipPath id="__lottie_element_67"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><g id="__lottie_element_70"><g transform="matrix(4.5,0,0,4.5,270.2480163574219,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(255,0,0)" fill-opacity="1" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g></g></g><filter id="__lottie_element_76" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_70_2" mask-type="alpha"><g filter="url(#__lottie_element_76)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use xlink:href="#__lottie_element_70"></use></g></mask><clipPath id="__lottie_element_78"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><g id="__lottie_element_81"><g clip-path="url(#__lottie_element_82)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path></g></g><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,261.88787841796875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><clipPath id="__lottie_element_82"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><g id="__lottie_element_88"><g clip-path="url(#__lottie_element_89)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,261.88787841796875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><clipPath id="__lottie_element_89"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><filter id="__lottie_element_98" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_88_2" mask-type="alpha"><g filter="url(#__lottie_element_98)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use xlink:href="#__lottie_element_88"></use></g></mask><filter id="__lottie_element_99" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_81_2" mask-type="alpha"><g filter="url(#__lottie_element_99)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use xlink:href="#__lottie_element_81"></use></g></mask><g id="__lottie_element_118"><g transform="matrix(4.5,0,0,4.5,270.2480163574219,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(255,0,0)" fill-opacity="1" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g></g></g><clipPath id="__lottie_element_137"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><filter id="__lottie_element_140" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_118_2" mask-type="alpha"><g filter="url(#__lottie_element_140)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use xlink:href="#__lottie_element_118"></use></g></mask><g id="__lottie_element_153"><g clip-path="url(#__lottie_element_154)" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1"><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,262)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(8,168,138)" stroke-opacity="1" stroke-width="0" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path><path fill="rgb(255,0,0)" fill-opacity="1" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><clipPath id="__lottie_element_154"><path d="M0,0 L500,0 L500,500 L0,500z"></path></clipPath><filter id="__lottie_element_157" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_153_2" mask-type="alpha"><g filter="url(#__lottie_element_157)"><rect width="500" height="500" x="0" y="0" fill="#ffffff" opacity="0"></rect><use xlink:href="#__lottie_element_153"></use></g></mask></defs><g clip-path="url(#__lottie_element_2)"><g clip-path="url(#__lottie_element_5)" transform="matrix(1,0,0,1,0,0)" opacity="0" style="display: block;"><g mask="url(#__lottie_element_26_2)" style="display: block;"><g clip-path="url(#__lottie_element_23)" transform="matrix(1,0,0,1,0,0)" opacity="1"><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19,-241 C19,-241 -34,-155 -34,-155 C-34,-155 0,-130 0,-130 C0,-130 54,-144 54,-144 C54,-144 85,-170 85,-170 C85,-170 19,-241 19,-241z"></path></g></g><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M69,-208 C69,-208 0,-162 0,-162 C0,-162 50,-97 50,-97 C50,-97 104,-111 104,-111 C104,-111 119,-177 119,-177 C119,-177 69,-208 69,-208z"></path></g></g><g transform="matrix(1,0,0,1,162,441)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g><g mask="url(#__lottie_element_49_2)" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path></g></g></g><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,262)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><g transform="matrix(4.5,0,0,4.5,270.24798583984375,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-17.020000457763672,-17.8439998626709 C-17.020000457763672,-17.8439998626709 -17.020000457763672,16.802000045776367 -17.020000457763672,16.802000045776367 M-3.9820001125335693,-17.8439998626709 C-3.9820001125335693,-17.8439998626709 -3.9820001125335693,16.802000045776367 -3.9820001125335693,16.802000045776367 M8.998000144958496,-17.8439998626709 C8.998000144958496,-17.8439998626709 8.998000144958496,16.802000045776367 8.998000144958496,16.802000045776367"></path></g></g><g transform="matrix(-1.3905764818191528,-4.279754161834717,4.279754161834717,-1.3905764818191528,77.97709655761719,-138.9887237548828)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><g opacity="1" transform="matrix(1,0,0,1,-3.9690001010894775,-34.03099822998047)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-9.904000282287598,-1.3910000324249268 C-9.22599983215332,-6.251999855041504 -5.046999931335449,-10 0,-10 C0,-10 0,-10 0,-10 C4.709000110626221,-10 8.661999702453613,-6.73799991607666 9.720999717712402,-2.3529999256134033"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-35.08000183105469,-34.125 C-35.08000183105469,-34.125 26.878999710083008,-33.95500183105469 26.878999710083008,-33.95500183105469"></path></g></g></g></g><g clip-path="url(#__lottie_element_9)" transform="matrix(1,0,0,1,0,0)" opacity="0" style="display: block;"><g mask="url(#__lottie_element_70_2)" style="display: block;"><g clip-path="url(#__lottie_element_67)" transform="matrix(1,0,0,1,0,0)" opacity="1"><g mask="url(#__lottie_element_81_2)" style="display: block;"><g clip-path="url(#__lottie_element_78)" transform="matrix(1,0,0,1,0,0)" opacity="1"><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19,-241 C19,-241 -34,-155 -34,-155 C-34,-155 0,-130 0,-130 C0,-130 54,-144 54,-144 C54,-144 85,-170 85,-170 C85,-170 19,-241 19,-241z"></path></g></g><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M69,-208 C69,-208 0,-162 0,-162 C0,-162 50,-97 50,-97 C50,-97 104,-111 104,-111 C104,-111 119,-177 119,-177 C119,-177 69,-208 69,-208z"></path></g></g><g transform="matrix(1,0,0,1,162,90.79419708251953)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><g mask="url(#__lottie_element_88_2)" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path></g></g></g><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,261.88787841796875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><g transform="matrix(4.5,0,0,4.5,270.2480163574219,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-17.020000457763672,-17.8439998626709 C-17.020000457763672,-17.8439998626709 -17.020000457763672,16.802000045776367 -17.020000457763672,16.802000045776367 M-3.9820001125335693,-17.8439998626709 C-3.9820001125335693,-17.8439998626709 -3.9820001125335693,16.802000045776367 -3.9820001125335693,16.802000045776367 M8.998000144958496,-17.8439998626709 C8.998000144958496,-17.8439998626709 8.998000144958496,16.802000045776367 8.998000144958496,16.802000045776367"></path></g></g></g><g clip-path="url(#__lottie_element_13)" transform="matrix(1,0,0,1,0,0)" opacity="0" style="display: block;"><g mask="url(#__lottie_element_118_2)" style="display: none;"><g clip-path="url(#__lottie_element_137)" transform="matrix(1,0,0,1,0,0)" opacity="1"><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19,-241 C19,-241 -34,-155 -34,-155 C-34,-155 0,-130 0,-130 C0,-130 54,-144 54,-144 C54,-144 85,-170 85,-170 C85,-170 19,-241 19,-241z"></path></g></g><g transform="matrix(1,0,0,1,235,440)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M69,-208 C69,-208 0,-162 0,-162 C0,-162 50,-97 50,-97 C50,-97 104,-111 104,-111 C104,-111 119,-177 119,-177 C119,-177 69,-208 69,-208z"></path></g></g><g transform="matrix(1,0,0,1,162,441)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g><g mask="url(#__lottie_element_153_2)" style="display: block;"><g transform="matrix(1,0,0,1,235,261)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M19.586999893188477,-212.0330047607422 C19.586999893188477,-212.0330047607422 -33.41299819946289,-126.03299713134766 -33.41299819946289,-126.03299713134766 C-33.41299819946289,-126.03299713134766 6.883999824523926,-77.10299682617188 6.883999824523926,-77.10299682617188 C6.883999824523926,-77.10299682617188 60.88399887084961,-91.10299682617188 60.88399887084961,-91.10299682617188 C60.88399887084961,-91.10299682617188 85.58699798583984,-141.0330047607422 85.58699798583984,-141.0330047607422 C85.58699798583984,-141.0330047607422 19.586999893188477,-212.0330047607422 19.586999893188477,-212.0330047607422z"></path></g></g></g><g transform="matrix(1,0,0,1,235,261)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M66.69000244140625,-187.8489990234375 C66.69000244140625,-187.8489990234375 27.91699981689453,-150.6649932861328 27.91699981689453,-150.6649932861328 C27.91699981689453,-150.6649932861328 50.20899963378906,-91.96199798583984 50.20899963378906,-91.96199798583984 C50.20899963378906,-91.96199798583984 116.80400085449219,-106.34500122070312 116.80400085449219,-106.34500122070312 C116.80400085449219,-106.34500122070312 115.43099975585938,-140.85899353027344 115.43099975585938,-140.85899353027344 C115.43099975585938,-140.85899353027344 66.69000244140625,-187.8489990234375 66.69000244140625,-187.8489990234375z"></path></g></g><g transform="matrix(1,0,0,1,162,262)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="12.04" d=" M100.11799621582031,-119.88200378417969 C100.11799621582031,-119.88200378417969 78.38700103759766,-199.91200256347656 78.38700103759766,-199.91200256347656 C78.38700103759766,-199.91200256347656 0.8820000290870667,-173.1179962158203 0.8820000290870667,-173.1179962158203 C0.8820000290870667,-173.1179962158203 -2.9749999046325684,-117.46600341796875 -2.9749999046325684,-117.46600341796875 C-2.9749999046325684,-117.46600341796875 54.85599899291992,-82.3010025024414 54.85599899291992,-82.3010025024414 C54.85599899291992,-82.3010025024414 100.11799621582031,-119.88200378417969 100.11799621582031,-119.88200378417969z"></path></g></g></g></g><g transform="matrix(4.5,0,0,4.5,270.2480163574219,271.24951171875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-17.020000457763672,-17.8439998626709 C-17.020000457763672,-17.8439998626709 -17.020000457763672,16.802000045776367 -17.020000457763672,16.802000045776367 M-3.9820001125335693,-17.8439998626709 C-3.9820001125335693,-17.8439998626709 -3.9820001125335693,16.802000045776367 -3.9820001125335693,16.802000045776367 M8.998000144958496,-17.8439998626709 C8.998000144958496,-17.8439998626709 8.998000144958496,16.802000045776367 8.998000144958496,16.802000045776367"></path></g></g><g transform="matrix(4.448970317840576,-0.6757673621177673,0.6757673621177673,4.448970317840576,287.3895568847656,248.49339294433594)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><g opacity="1" transform="matrix(1,0,0,1,-3.9690001010894775,-34.03099822998047)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-9.904000282287598,-1.3910000324249268 C-9.22599983215332,-6.251999855041504 -5.046999931335449,-10 0,-10 C0,-10 0,-10 0,-10 C4.709000110626221,-10 8.661999702453613,-6.73799991607666 9.720999717712402,-2.3529999256134033"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-35.08000183105469,-34.125 C-35.08000183105469,-34.125 26.878999710083008,-33.95500183105469 26.878999710083008,-33.95500183105469"></path></g></g></g></g><g clip-path="url(#__lottie_element_17)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(4.4802680015563965,-0.4209500253200531,0.4209500253200531,4.4802680015563965,255.84007263183594,270.1951904296875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M21.97800064086914,-33.762001037597656 C21.975793838500977,-33.871826171875 21.881916046142578,-33.96055221557617 21.76850128173828,-33.959999084472656 C21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 21.76850128173828,-33.959999084472656 C21.65508460998535,-33.95944595336914 18.874412536621094,-33.967586517333984 15.563030242919922,-33.97816467285156 C15.563030242919922,-33.97816467285156 -23.781030654907227,-34.10383605957031 -23.781030654907227,-34.10383605957031 C-27.0924129486084,-34.11441421508789 -29.841941833496094,-34.12210464477539 -29.91699981689453,-34.121002197265625 C-29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 -29.91699981689453,-34.121002197265625 C-29.99205780029297,-34.119895935058594 -30.054567337036133,-34.078224182128906 -30.056499481201172,-34.02799987792969 C-30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 -30.056499481201172,-34.02799987792969 C-30.05843162536621,-33.97777557373047 -30.061738967895508,-31.248401641845703 -30.06388282775879,-27.937002182006836 C-30.06388282775879,-27.937002182006836 -30.100116729736328,28.035001754760742 -30.100116729736328,28.035001754760742 C-30.10226058959961,31.34640121459961 -27.4153995513916,34.03499984741211 -24.104000091552734,34.03499984741211 C-24.104000091552734,34.03499984741211 16.118999481201172,34.03499984741211 16.118999481201172,34.03499984741211 C19.43039894104004,34.03499984741211 22.113550186157227,31.346405029296875 22.106840133666992,28.035011291503906 C22.106840133666992,28.035011291503906 21.994159698486328,-27.563011169433594 21.994159698486328,-27.563011169433594 C21.987449645996094,-30.874404907226562 21.980207443237305,-33.65217208862305 21.97800064086914,-33.762001037597656 C21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656 21.97800064086914,-33.762001037597656z"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-17.020000457763672,-17.8439998626709 C-17.020000457763672,-17.8439998626709 -17.020000457763672,16.802000045776367 -17.020000457763672,16.802000045776367 M-3.9820001125335693,-17.8439998626709 C-3.9820001125335693,-17.8439998626709 -3.9820001125335693,16.802000045776367 -3.9820001125335693,16.802000045776367 M8.998000144958496,-17.8439998626709 C8.998000144958496,-17.8439998626709 8.998000144958496,16.802000045776367 8.998000144958496,16.802000045776367"></path></g><g opacity="1" transform="matrix(0.9991050958633423,-0.042296841740608215,0.042296841740608215,0.9991050958633423,1.0361814498901367,-2.6114768981933594)"><g opacity="1" transform="matrix(1,0,0,1,-3.9690001010894775,-34.03099822998047)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(247,184,74)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-9.904000282287598,-1.3910000324249268 C-9.22599983215332,-6.251999855041504 -5.046999931335449,-10 0,-10 C0,-10 0,-10 0,-10 C4.709000110626221,-10 8.661999702453613,-6.73799991607666 9.720999717712402,-2.3529999256134033"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(239,100,71)" stroke-opacity="1" stroke-width="2.8000000000000003" d=" M-35.08000183105469,-34.125 C-35.08000183105469,-34.125 26.878999710083008,-33.95500183105469 26.878999710083008,-33.95500183105469"></path></g></g></g></g><g class="com" style="display: none;"><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g><g><path></path></g></g></g></svg></div></template></lord-icon>
                     <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
                         <h4>Are you sure ?</h4>
                         <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
@@ -172,21 +238,21 @@
 <div class="app-menu navbar-menu">
     <!-- LOGO -->
     <div class="navbar-brand-box">       
-        <a class="logo logo-dark" href="https://a1.micargo.in/dashboard">
+        <a class="logo logo-dark" href="/dashboard">
     <span class="logo-sm">
-        <img src="./Dashboard Overview » Mi Cargo_files/logo-client-sm-dark.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
+        <img src="/assets/images/logo-client-sm-dark.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
     </span>
     <span class="logo-lg">
-        <img src="./Dashboard Overview » Mi Cargo_files/logo-client-dark.png" alt="" class="client-logo-lg img-fluid" style="width: auto;">
+        <img src="/assets/images/logo-client-dark.png" alt="" class="client-logo-lg img-fluid" style="width: auto;">
     </span>
 </a>
 
-<a class="logo logo-light" href="https://a1.micargo.in/dashboard">
+<a class="logo logo-light" href="/dashboard">
     <span class="logo-sm">
-        <img src="./Dashboard Overview » Mi Cargo_files/logo-client-sm-light.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
+        <img src="/assets/images/logo-client-sm-light.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
     </span>
     <span class="logo-lg">
-        <img src="./Dashboard Overview » Mi Cargo_files/logo-client-light.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
+        <img src="/assets/images/logo-client-light.png" alt="" class="client-logo-md img-fluid" style="width: auto;">
     </span>
 </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
@@ -197,7 +263,7 @@
     <div class="dropdown sidebar-user m-1 rounded">
         <button type="button" class="btn material-shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="d-flex align-items-center gap-2">
-                <img class="rounded header-profile-user" src="./Dashboard Overview » Mi Cargo_files/avatar-1.jpg" alt="Header Avatar">
+                <img class="rounded header-profile-user" src="/assets/images/users/avatar-1.jpg" alt="Header Avatar">
                 <span class="text-start">
                     <span class="d-block fw-medium sidebar-user-name-text">Anna Adame</span>
                     <span class="d-block fs-14 sidebar-user-name-sub-text"><i class="ri ri-circle-fill fs-10 text-success align-baseline"></i> <span class="align-middle">Online</span></span>
@@ -207,15 +273,15 @@
         <div class="dropdown-menu dropdown-menu-end">
             <!-- item-->
             <h6 class="dropdown-header">Welcome Anna!</h6>
-            <a class="dropdown-item" href="https://a1.micargo.in/pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
-            <a class="dropdown-item" href="https://a1.micargo.in/apps-chat.html"><i class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
-            <a class="dropdown-item" href="https://a1.micargo.in/apps-tasks-kanban.html"><i class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Taskboard</span></a>
-            <a class="dropdown-item" href="https://a1.micargo.in/pages-faqs.html"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Help</span></a>
+            <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+            <a class="dropdown-item" href="apps-chat.html"><i class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
+            <a class="dropdown-item" href="apps-tasks-kanban.html"><i class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Taskboard</span></a>
+            <a class="dropdown-item" href="pages-faqs.html"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Help</span></a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="https://a1.micargo.in/pages-profile.html"><i class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Balance : <b>$5971.67</b></span></a>
-            <a class="dropdown-item" href="https://a1.micargo.in/pages-profile-settings.html"><span class="badge bg-success-subtle text-success mt-1 float-end">New</span><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
-            <a class="dropdown-item" href="https://a1.micargo.in/auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
-            <a class="dropdown-item" href="https://a1.micargo.in/auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+            <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Balance : <b>$5971.67</b></span></a>
+            <a class="dropdown-item" href="pages-profile-settings.html"><span class="badge bg-success-subtle text-success mt-1 float-end">New</span><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
+            <a class="dropdown-item" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
+            <a class="dropdown-item" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
         </div>
     </div>
     <div id="scrollbar">
@@ -225,33 +291,30 @@
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="menu-title"><span>Menu</span></li>
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="https://a1.micargo.in/dashboard">
+                    <a class="nav-link menu-link" href="/dashboard">
                         <i class="ri-dashboard-2-line"></i> <span>Dashboard</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-link collapsed" href="https://a1.micargo.in/dashboard#sidebarParcels" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarParcels">
+                    <a class="nav-link menu-link collapsed" href="#sidebarParcels" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarParcels">
                         <i class="las la-boxes"></i> <span>Parcels</span>
                     </a>
                     <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarParcels">
                         <ul class="nav nav-sm flex-column" style="width:220px">
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/shipment"> Parcels </a>
+                                <a class="nav-link" href="/shipment"> Parcels </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/shipment/booking"> Book Parcel </a>
+                                <a class="nav-link" href="/shipment/booking"> Book Parcel </a>
                             </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://a1.micargo.in/advancesearch"> Advanced Search </a>
+                                    <a class="nav-link" href="/advancesearch"> Advanced Search </a>
                                 </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/shipment/open-receive">Open Recieve </a>
+                                <a class="nav-link" href="/shipment/open-receive">Open Recieve </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/shipment/bulk-delivery"> Multiple LR Delivery </a>
-                            </li>
-                            <li class="nav-item">
-                                
+                                <a class="nav-link" href="/shipment/bulk-delivery"> Multiple LR Delivery </a>
                             </li>
                             <li class="nav-item">
                                 
@@ -260,58 +323,61 @@
                                 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/stock-verification"> Stock Verification </a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/stock-verification"> Stock Verification </a>
                             </li>
                         </ul>
                     </div>
                     
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-link collapsed" href="https://a1.micargo.in/dashboard#sidebarDoorDelivery" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDoorDelivery">
+                    <a class="nav-link menu-link collapsed" href="#sidebarDoorDelivery" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDoorDelivery">
                         <i class="ri-takeaway-line"></i> <span>Pickup/Delivery</span>
                     </a>
                    
                     <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarDoorDelivery">
                         <ul class="nav nav-sm flex-column" style="width:220px">
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/door-delivery/assign">Assign Delivery Job </a>
+                                <a class="nav-link" href="/door-delivery/assign">Assign Delivery Job </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/door-delivery/manage">Manage Delivery</a>
+                                <a class="nav-link" href="/door-delivery/manage">Manage Delivery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/door-delivery/drs">Delivery Run Sheet(DRS)</a>
+                                <a class="nav-link" href="/door-delivery/drs">Delivery Run Sheet(DRS)</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                             
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="https://a1.micargo.in/trips">
+                    <a class="nav-link menu-link" href="/trips">
                         <i class="las la-shipping-fast"></i> <span>Trips</span>
                     </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link menu-link collapsed" href="https://a1.micargo.in/dashboard#sidebarAccount" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAccount">
+                    <a class="nav-link menu-link collapsed" href="#sidebarAccount" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAccount">
                         <i class="ri-money-rupee-circle-fill"></i> <span>Accounts</span>
                     </a>
                     <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarAccount">
                         <ul class="nav nav-sm flex-column" style="width:220px">
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/accounts/expense"> Expense </a>
+                                <a class="nav-link" href="/accounts/expense"> Expense </a>
                             </li>
                             <li class="nav-item">
                                 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/accounts/branch-deposit"> Branch Deposit </a>
+                                <a class="nav-link" href="/accounts/branch-deposit"> Branch Deposit </a>
                             </li>
                             <li class="nav-item">
                                 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarInvoice" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarInvoice">
+                                <a class="nav-link collapsed" href="#sidebarInvoice" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarInvoice">
                                     Invoice
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarInvoice">
@@ -333,22 +399,22 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link collapsed" href="https://a1.micargo.in/dashboard#sidebarContact" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarContact">
+                    <a class="nav-link menu-link collapsed" href="#sidebarContact" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarContact">
                         <i class="ri-contacts-book-line"></i> <span>Contacts</span>
                     </a>
                     <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarContact">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/staff"> Staffs  </a>
+                                <a class="nav-link" href="/staff"> Staffs  </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/customer"> Customers</a>
+                                <a class="nav-link" href="/customer"> Customers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/driver"> Drivers</a>
+                                <a class="nav-link" href="/driver"> Drivers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/directory/branch"> Branch </a>
+                                <a class="nav-link" href="/directory/branch"> Branch </a>
                             </li>
                             <li class="nav-item">
                                 
@@ -358,13 +424,13 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link collapsed" href="https://a1.micargo.in/dashboard#sidebarVehicles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarVehicles">
+                    <a class="nav-link menu-link collapsed" href="#sidebarVehicles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarVehicles">
                         <i class=" ri-truck-line"></i> <span>Vehicles</span>
                     </a>
                     <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarVehicles">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/vehicle"> Vehicles </a>
+                                <a class="nav-link" href="/vehicle"> Vehicles </a>
                             </li>
                             <li class="nav-item">
                                     
@@ -374,7 +440,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link collapsed" href="https://a1.micargo.in/dashboard#sidebarUserRoles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarUserRoles">
+                    <a class="nav-link menu-link collapsed" href="#sidebarUserRoles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarUserRoles">
                         <i class="ri-admin-line"></i> <span>Users &amp; Roles</span>
                     </a>
                     <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarUserRoles">
@@ -393,69 +459,69 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link collapsed" href="https://a1.micargo.in/dashboard#sidebarReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarReports">
+                    <a class="nav-link menu-link collapsed" href="#sidebarReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarReports">
                         <i class="ri-file-chart-line"></i> <span>Reports</span>
                     </a>
                     <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarReports">
                         <ul class="nav nav-sm flex-column" style="width:260px">
 
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/reports/booking-statement">Booking Report </a>
+                                <a class="nav-link" href="/reports/booking-statement">Booking Report </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/reports/inward-booking">Inward Report </a>
+                                <a class="nav-link" href="/reports/inward-booking">Inward Report </a>
                             </li>
                             <li class="nav-item">
                                 
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarSummaryReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSummaryReports">
+                                <a class="nav-link collapsed" href="#sidebarSummaryReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSummaryReports">
                                     Summary Report
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarSummaryReports">
                                     <ul class="nav nav-sm flex-column" style="width:240px">
 
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/booking-summary">Booking Summary Report </a>
+                                            <a class="nav-link" href="/reports/booking-summary">Booking Summary Report </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/inward-summary">Inward Summary Report </a>
+                                            <a class="nav-link" href="/reports/inward-summary">Inward Summary Report </a>
                                         </li>
                                        
 										<li class="nav-item">
-											<a class="nav-link" href="https://a1.micargo.in/reports/inoutward-summary-report">In &amp; Out Summary </a>
+											<a class="nav-link" href="/reports/inoutward-summary-report">In &amp; Out Summary </a>
 										</li>
 										<li class="nav-item">
                                             
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/outward-summary-report">  Outward Pending Summary </a>
+                                            <a class="nav-link" href="/reports/outward-summary-report">  Outward Pending Summary </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/missing-summary-report">  Missing Parcels Summary </a>
+                                            <a class="nav-link" href="/reports/missing-summary-report">  Missing Parcels Summary </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/undelivery-report-summary"> Undelivered Parcels Summary </a>
+                                            <a class="nav-link" href="/reports/undelivery-report-summary"> Undelivered Parcels Summary </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/branch-review-report"> Branch Review Summary </a>
+                                            <a class="nav-link" href="/reports/branch-review-report"> Branch Review Summary </a>
                                         </li>
 										<li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/open-parcel-count"> Open Received Summary </a>
+                                            <a class="nav-link" href="/reports/open-parcel-count"> Open Received Summary </a>
                                         </li>
 
 									</ul>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/reports/door-pickup-report">Door Pickup Report </a>
+                                <a class="nav-link" href="/reports/door-pickup-report">Door Pickup Report </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/reports/door-delivery-report">Door Delivery Report </a>
+                                <a class="nav-link" href="/reports/door-delivery-report">Door Delivery Report </a>
                             </li>                           
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarDivisionReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDivisionReports">
+                                <a class="nav-link collapsed" href="#sidebarDivisionReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDivisionReports">
                                     Zone Based Reports
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarDivisionReports">
@@ -487,23 +553,23 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarAccountReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAccountReports">
+                                <a class="nav-link collapsed" href="#sidebarAccountReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAccountReports">
                                     Accounts Report
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarAccountReports">
                                     <ul class="nav nav-sm flex-column" style="width:240px">
 
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/dailyledger-report"> Daily Ledger Report </a>
+                                            <a class="nav-link" href="/reports/dailyledger-report"> Daily Ledger Report </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/branch-account"> Branch Account Report </a>
+                                            <a class="nav-link" href="/reports/branch-account"> Branch Account Report </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/branch-balance-report"> Branch Balance Report </a>
+                                            <a class="nav-link" href="/reports/branch-balance-report"> Branch Balance Report </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/branch-deposit-report"> Branch Deposit Report </a>
+                                            <a class="nav-link" href="/reports/branch-deposit-report"> Branch Deposit Report </a>
                                         </li>
                                         <li class="nav-item">
                                             
@@ -518,7 +584,7 @@
 											
 										</li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/misreport">MIS Report </a>
+                                            <a class="nav-link" href="/reports/misreport">MIS Report </a>
                                         </li>
 
 									</ul>
@@ -526,32 +592,32 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/reports/outward-pending-report">  Outward Pending Report </a>
+                                <a class="nav-link" href="/reports/outward-pending-report">  Outward Pending Report </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarParcelStatusReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarParcelStatusReports">
+                                <a class="nav-link collapsed" href="#sidebarParcelStatusReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarParcelStatusReports">
                                     Parcel Status Reports
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarParcelStatusReports">
                                     <ul class="nav nav-sm flex-column" style="width:240px">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/delivery-report"> Delivery Report </a>
+                                            <a class="nav-link" href="/reports/delivery-report"> Delivery Report </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/unreceived-report"> Unreceived Parcels </a>
+                                            <a class="nav-link" href="/reports/unreceived-report"> Unreceived Parcels </a>
                                         </li>
                                         <li class="nav-item">
                                             
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/missing-report">  Missing Parcels Report </a>
+                                            <a class="nav-link" href="/reports/missing-report">  Missing Parcels Report </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/open-received-parcel-report"> Open Received Parcels </a>
+                                            <a class="nav-link" href="/reports/open-received-parcel-report"> Open Received Parcels </a>
                                         </li>                                        
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/reports/cancelation-report"> Cancellation Report </a>
+                                            <a class="nav-link" href="/reports/cancelation-report"> Cancellation Report </a>
                                         </li>
                                         <li class="nav-item">
                                             
@@ -560,16 +626,16 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/reports/luggage-chart"> Luggage Chart Report </a>
+                                <a class="nav-link" href="/reports/luggage-chart"> Luggage Chart Report </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/reports/recivied-chart"> Received Chart Report </a>
+                                <a class="nav-link" href="/reports/recivied-chart"> Received Chart Report </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/reports/branch-list-report"> Branch List </a>
+                                <a class="nav-link" href="/reports/branch-list-report"> Branch List </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarInvoiceReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarInvoiceReports">
+                                <a class="nav-link collapsed" href="#sidebarInvoiceReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarInvoiceReports">
                                     Invoice Reports
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarInvoiceReports">
@@ -587,7 +653,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarTripReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTripReports">
+                                <a class="nav-link collapsed" href="#sidebarTripReports" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTripReports">
                                     Trip Report
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarTripReports">
@@ -624,22 +690,22 @@
                 </li>
               
                 <li class="nav-item">
-                    <a class="nav-link menu-link collapsed" href="https://a1.micargo.in/dashboard#sidebarSystemSetup" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSystemSetup">
+                    <a class="nav-link menu-link collapsed" href="#sidebarSystemSetup" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSystemSetup">
                         <i class="ri-apps-2-line"></i> <span data-key="t-apps">System Setup</span>
                     </a>
                     <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarSystemSetup">
                         <ul class="nav nav-sm flex-column" style="width:220px">
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDirectory">
+                                <a class="nav-link collapsed" href="#sidebarDirectory" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDirectory">
                                     Directory
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarDirectory">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/directory/state"> State </a>
+                                            <a class="nav-link" href="/directory/state"> State </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/directory/place"> Place </a>
+                                            <a class="nav-link" href="/directory/place"> Place </a>
                                         </li>
                                         <li class="nav-item">
                                             
@@ -651,53 +717,53 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarVehicle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarVehicle">
+                                <a class="nav-link collapsed" href="#sidebarVehicle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarVehicle">
                                     Vehicle
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarVehicle">
                                     <ul class="nav nav-sm flex-column">
                                         
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/vehicle/type"> Vehicle Type </a>
+                                            <a class="nav-link" href="/vehicle/type"> Vehicle Type </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/vehicle/brand"> Vehicle Brand </a>
+                                            <a class="nav-link" href="/vehicle/brand"> Vehicle Brand </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/vehicle/model"> Vehicle Model </a>
+                                            <a class="nav-link" href="/vehicle/model"> Vehicle Model </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link collapsed" href="https://a1.micargo.in/dashboard#sidebarArticle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarArticle">
+                                <a class="nav-link collapsed" href="#sidebarArticle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarArticle">
                                     Articles
                                 </a>
                                 <div class="collapse menu-dropdown border border-dark border-opacity-25" id="sidebarArticle">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/package/type"> Article </a>
+                                            <a class="nav-link" href="/package/type"> Article </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://a1.micargo.in/package/type-category">Article Category</a>
+                                            <a class="nav-link" href="/package/type-category">Article Category</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                          
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/branch/hub-mapping"> Hub-Branch Mapping</a>
+                                <a class="nav-link" href="/branch/hub-mapping"> Hub-Branch Mapping</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/route">Routes</a>
+                                <a class="nav-link" href="/route">Routes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/bank"> Bank </a>
+                                <a class="nav-link" href="/bank"> Bank </a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/expense/type"> Expense Type </a>
+                                <a class="nav-link" href="/expense/type"> Expense Type </a>
                             </li>
                             <li class="nav-item">
                                 
@@ -706,16 +772,16 @@
                                 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/quantity"> Quantity Based Discount </a>
+                                <a class="nav-link" href="/quantity"> Quantity Based Discount </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/demurrage"> Demurrage </a>
+                                <a class="nav-link" href="/demurrage"> Demurrage </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/allowance-policy"> Bata Policy </a>
+                                <a class="nav-link" href="/allowance-policy"> Bata Policy </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://a1.micargo.in/manage-downloads"> Downloads </a>
+                                <a class="nav-link" href="/manage-downloads"> Downloads </a>
                             </li>
                             <li class="nav-item">
                                 
@@ -774,8 +840,8 @@
                 <div class="flex-grow-1">
                     <h4 class="fs-18 lh-base mb-0">Your earning's today<br> <span class="text-success fw-bold" style="font-size:32px;">₹ 0.00</span> </h4>
                     <div class="d-flex gap-3 mt-4">
-                        <a class="btn btn-primary" href="https://a1.micargo.in/shipment/booking">Book Parcel </a>
-                        <a class="btn btn-success" href="https://a1.micargo.in/shipment/list?type=107">Deliver Parcel</a>
+                        <a class="btn btn-primary" href="/shipment/booking">Book Parcel </a>
+                        <a class="btn btn-success" href="/shipment/list?type=107">Deliver Parcel</a>
                     </div>
                 </div>
                 <div class="flex-grow-1 d-none d-sm-block">
@@ -823,7 +889,7 @@
                                 <span class="counter-value" data-target="0">0</span> / <span class="counter-value" data-target="0">0</span>
                             </h4>
                             
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=101">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=101">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-primary-subtle rounded fs-3">
@@ -852,7 +918,7 @@
                                 <span class="counter-value" data-target="0">0</span> / <span class="counter-value" data-target="0">0</span>
                             </h4>
                             
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=102">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=102">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                                 <span class="avatar-title bg-success bg-opacity-10 rounded fs-3">
@@ -881,7 +947,7 @@
                                 <span class="counter-value" data-target="0">0</span> / <span class="counter-value" data-target="0">0</span>
                             </h4>
                             
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=103">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=103">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-primary-subtle rounded fs-3">
@@ -910,7 +976,7 @@
                                 <span class="counter-value" data-target="0">0</span> / <span class="counter-value" data-target="0">0</span>
                             </h4>
 
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=110">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=110">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-primary-subtle rounded fs-3">
@@ -939,7 +1005,7 @@
                                 <span class="counter-value" data-target="1">1</span> / <span class="counter-value" data-target="1">1</span>
                             </h4>
                             
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=104">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=104">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-primary-subtle rounded fs-3">
@@ -972,7 +1038,7 @@
                             <h4 class="fs-20 fw-semibold ff-secondary mb-2">
                                 <span class="counter-value" data-target="5">5</span> / <span class="counter-value" data-target="13">13</span>
                             </h4>                            
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=106">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=106">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-primary-subtle rounded fs-3">
@@ -1001,7 +1067,7 @@
                                 <span class="counter-value" data-target="0">0</span> / <span class="counter-value" data-target="0">0</span>
                             </h4>
 
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=109">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=109">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                                 <span class="avatar-title bg-success bg-opacity-10 rounded fs-3">
@@ -1029,7 +1095,7 @@
                             <h4 class="fs-20 fw-semibold ff-secondary mb-2">
                                 <span class="counter-value" data-target="0">0</span> / <span class="counter-value" data-target="0">0</span>
                             </h4>                            
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=108">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=108">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-primary-subtle rounded fs-3">
@@ -1057,7 +1123,7 @@
                             <h4 class="fs-20 fw-semibold ff-secondary mb-2">
                                 <span class="counter-value" data-target="1">1</span> / <span class="counter-value" data-target="3">3</span>
                             </h4>                            
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=105">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=105">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-primary-subtle rounded fs-3">
@@ -1085,7 +1151,7 @@
                             <h4 class="fs-20 fw-semibold ff-secondary mb-2">
                                 <span class="counter-value" data-target="2">2</span> / <span class="counter-value" data-target="7">7</span>
                             </h4>                            
-                            <a class="text-decoration-underline text-info" href="https://a1.micargo.in/shipment/list?type=107">View Parcels</a>
+                            <a class="text-decoration-underline text-info" href="/shipment/list?type=107">View Parcels</a>
                         </div>
                         <div class="avatar-sm flex-shrink-0">
                             <span class="avatar-title bg-primary-subtle rounded fs-3">
@@ -1367,9 +1433,9 @@ Route: DPI LOCAL 2 - DHARMAPURI LOCAL (TIRUPATTHUR)                             
                                 <h5 class="text-primary fw-medium mb-1"><strong>TN38DE4158</strong></h5>
                                     <h5 class="fs-14 text-primary"><span class="">Actual Departure 28/09/2026 12:37 PM</span></h5>
                                 <ul class="list-inline text-muted">
-                                    <li class="list-inline-item"><a class="link-secondary link-offset-2 text-decoration-underline link-underline-opacity-25 link-underline-opacity-100-hover" href="https://a1.micargo.in/trip/180741/overview">View Trip</a></li>
-                                    <li class="list-inline-item"><a class="link-secondary link-offset-2 text-decoration-underline link-underline-opacity-25 link-underline-opacity-100-hover" href="https://a1.micargo.in/trip/180741/load/summary">Luggage Chart</a></li>
-                                    <li class="list-inline-item"><a class="link-secondary link-offset-2 text-decoration-underline link-underline-opacity-25 link-underline-opacity-100-hover" href="https://a1.micargo.in/trip/180741/receive/summary">Received Chart</a></li>
+                                    <li class="list-inline-item"><a class="link-secondary link-offset-2 text-decoration-underline link-underline-opacity-25 link-underline-opacity-100-hover" href="/trip/180741/overview">View Trip</a></li>
+                                    <li class="list-inline-item"><a class="link-secondary link-offset-2 text-decoration-underline link-underline-opacity-25 link-underline-opacity-100-hover" href="/trip/180741/load/summary">Luggage Chart</a></li>
+                                    <li class="list-inline-item"><a class="link-secondary link-offset-2 text-decoration-underline link-underline-opacity-25 link-underline-opacity-100-hover" href="/trip/180741/receive/summary">Received Chart</a></li>
                                 </ul>
                             </div>
 
@@ -1445,7 +1511,7 @@ Route: DPI LOCAL 2 - DHARMAPURI LOCAL (TIRUPATTHUR)                             
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">
-                <a class="menu-link" href="https://a1.micargo.in/downloads"><i class="ri-download-line me-1"></i>Download Forms</a>
+                <a class="menu-link" href="/downloads"><i class="ri-download-line me-1"></i>Download Forms</a>
             </div>
             <div class="col-sm-6">
                 <div class="text-sm-end">
@@ -1532,7 +1598,7 @@ Route: DPI LOCAL 2 - DHARMAPURI LOCAL (TIRUPATTHUR)                             
                 <iframe id="vehicleTrackingFrame" title="Live vehicle tracking" class="d-none" referrerpolicy="no-referrer" style="
                             width: 100%;
                             height: 70vh;
-                            border: 0;" src="./Dashboard Overview » Mi Cargo_files/saved_resource.html">
+                            border: 0;">
                 </iframe>
 
             </div>
@@ -1541,25 +1607,25 @@ Route: DPI LOCAL 2 - DHARMAPURI LOCAL (TIRUPATTHUR)                             
     </div>
 </div>
 
-    <script src="./Dashboard Overview » Mi Cargo_files/jquery-3.7.1.min.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/bootstrap.bundle.min.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/simplebar.min.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/waves.min.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/feather.min.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/lord-icon-2.1.0.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/choices.min.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/flatpickr.min.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/jquery.inputmask.min.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/sweetalert2.min.js.download"></script>
+    <script src="/assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/simplebar/simplebar.min.js"></script>
+<script src="/assets/vendor/node-waves/waves.min.js"></script>
+<script src="/assets/vendor/feather-icons/feather.min.js"></script>
+<script src="/assets/vendor/lord-icon/lord-icon-2.1.0.js"></script>
+<script src="/assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="/assets/vendor/flatpickr/flatpickr.min.js"></script>
+<script src="/assets/vendor/jquery-inputmask/jquery.inputmask.min.js"></script>
+<script src="/assets/vendor/sweetalert2/sweetalert2.min.js"></script>
 
 
     
-    <script src="./Dashboard Overview » Mi Cargo_files/jquery.validate.min.js.download"></script>
-<script src="./Dashboard Overview » Mi Cargo_files/jquery.validate.unobtrusive.min.js.download"></script>
+    <script src="/assets/vendor/jquery-validation/jquery.validate.min.js"></script>
+<script src="/assets/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
-    <script src="./Dashboard Overview » Mi Cargo_files/comparison-validator.js.download"></script>
-    <script src="./Dashboard Overview » Mi Cargo_files/required-when-validator.js.download"></script>
-    <script src="./Dashboard Overview » Mi Cargo_files/qrcode.min.js.download"></script>
+    <script src="/assets/js/validators/comparison-validator.js?v=To7rcHwIJv50VpQrwA2oxwjdFr1hxwc-4N-c77HbGvg"></script>
+    <script src="/assets/js/validators/required-when-validator.js?v=Zs1PbpjYXQC2MupSYfoWAZelnOJ-ERiqsh-_y73cW9s"></script>
+    <script src="/assets/vendor/qrcodejs/qrcode.min.js"></script>
     <script>
         var MiCargoModuleOptions = {
             Url: {
@@ -1582,8 +1648,8 @@ Route: DPI LOCAL 2 - DHARMAPURI LOCAL (TIRUPATTHUR)                             
     <script>
         window.appConfig = {"awbMaskStyle":"BranchBasedSequentialNumber"};
     </script>    
-    <script src="./Dashboard Overview » Mi Cargo_files/awb-mask-component.js.download"></script>    
-    <script src="./Dashboard Overview » Mi Cargo_files/shipment-search.js.download"></script>
+    <script src="/assets/js/components/awb-mask-component.js?v=93-GWaTzYzVTxkm_gmKceHv3qiyvKJJy-hW7YFrYQ-w"></script>    
+    <script src="/assets/js/modules/shipment/shipment-search.js?v=sYEDiDkl3jAMonXZjtOiVxWEH__TO6VUTdQdSghvsmc"></script>
 
     <script>
 
@@ -1602,10 +1668,10 @@ Route: DPI LOCAL 2 - DHARMAPURI LOCAL (TIRUPATTHUR)                             
         });
     </script>
     
-    <script src="./Dashboard Overview » Mi Cargo_files/core-component.js.download"></script>
-    <script src="./Dashboard Overview » Mi Cargo_files/internal-api-component.js.download"></script>
-    <script src="./Dashboard Overview » Mi Cargo_files/vehicle-tracking-component.js.download"></script>
-    <script src="./Dashboard Overview » Mi Cargo_files/dashboard.js.download"></script>
+    <script src="/assets/js/components/core-component.js?v=LqnnazCIrMcWagqfCCvYe9mZ18Un8beNbHT3TWAhYFg"></script>
+    <script src="/assets/js/components/internal-api-component.js?v=1fcWmu3XVj99MZ73RqC4uD7TU1D3mKXlg5gNQ0Qh5lY"></script>
+    <script src="/assets/js/components/vehicle-tracking-component.js?v=8tO_ej0vJxxz5q0SIMkdjtmDDbeQyHMMXuzFcom49ko"></script>
+    <script src="/assets/js/modules/dashboard/dashboard.js?v=wXB3VCKW9YnQjzpuSZQwDBIxfSwGwAf5L3LSzo1irhc"></script>
 
     <script>
         $(document).ready(function () {
@@ -1613,7 +1679,7 @@ Route: DPI LOCAL 2 - DHARMAPURI LOCAL (TIRUPATTHUR)                             
         });
     </script>
 
-    <script src="./Dashboard Overview » Mi Cargo_files/micargo-core.js.download"></script>
+    <script src="/assets/js/micargo-core.js?v=PeirGFS5FmArWM6ELxWUhHbmXufTowqE-ZLn1E2GWn0"></script>
     
 
 
